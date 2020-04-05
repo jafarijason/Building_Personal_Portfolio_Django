@@ -168,7 +168,33 @@ for making user for django admin you should type this command
 ```
 python manage.py createsuperuser
 ```
+-----------------------------------
 
+
+
+at this time we want to start by admin.py 
+
+
+```
+from django.contrib import admin
+from .models import Job
+
+
+# Register your models here.
+
+admin.site.register(Job)
+```
+
+
+----------------------------------------
+
+
+crating model object via admin panel
+django
+
+
+
+------
 
 
 
