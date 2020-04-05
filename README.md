@@ -21,3 +21,10 @@ and after that we shoud install django by pip
 ```
 pip install django
 ```
+
+after that we should use 
+
+```
+django-admin.exe startproject portfolio
+
+```
