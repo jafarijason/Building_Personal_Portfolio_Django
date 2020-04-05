@@ -1,8 +1,190 @@
-<html>
+{% comment %}  
 
-<body>
+<h1>
+All my certificats
+</h1>
 
-Hello world!
+{% for job in jobs.all  %}
 
-</body>
+{{ job.summary }}<br>
+
+ {% endfor %}
+ {% endcomment %}
+
+ 
+<!doctype html>
+<html lang="en">
+{% load static  %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Jason Jafari">
+     
+    <title>Jason Jafari</title>
+
+   
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"  crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="{% static 'logo.png' %}" sizes="180x180">
+<link rel="icon" href="{% static 'logo.png' %}"  sizes="32x32" type="image/png">
+<link rel="icon" href="{% static 'logo.png' %}" sizes="16x16" type="image/png">
+{% comment %} <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json"> {% endcomment %}
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.4/examples/album/album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About Jason</h4>
+          <p class="text-muted" style="text-align: justify;   text-justify: inter-word;" >I have 12 years of total experience in several industries, and I have worked as a data scientist since 2017. With extensive experience in industry to build predictive and inference models, I create narratives that shed light on business needs. I use Machine Learning to solve problems of different business nature.<br>
+I am proficient in several programming languages including Python (I have mostly used it for data science part), C++ (Arduino programming), PHP (backend programming, writing plugins for WordPress), JavaScript (frontend and backend web applications with Node.js and React), R (data visualization) and MATLAB (research).<br>
+I have worked with both RDBMS (MySQL, Maria DB, Microsoft SQL Server and SQLite) and NoSQL (MongoDB) databases extensively and have expertise in enterprise application development. And I have plan to learn apache Spark and Hadoop in the near future. <br>
+I have skill for Client-server Support with extensive IT background, good knowledge of TCP/IP, Windows and Linux, Amazon Web Services (AWS), virtualization (VMware, Oracle VM VirtualBox, Hyper-V), Docker,  Mikrotik configuration and I enjoy troubleshooting to find solution to technical issue. <br>
+As a python developer I have experience working with various libraries such as Numpy, Pandas, Matplotlib, ggplot, Scipy, Keras, tensorflow, Scikit-Learn, Beautiful Soup, Selenium, Tkinter, Darknet.
+My main version control is git and I host my own repositories. <br>
+Experience of using Artificial intelligent and Machine learning such as linear regression, logistic regression, SVM, random forest, gradient boosting, PCA, K-means, SOM, collaborative filtering, decision Trees, K-NN. Good knowledge at Statistic (descriptive, inferential), probability, and linear algebra.<br>
+Passionate about AI and robotics and applying technologies to enable cognitive capabilities on smart devices that can increase business efficiency and improve quality of life.<br>
+I enjoy putting into practice my data science skills to develop new elegant data products.<br>
+I am highly interested in solving challenging problems in any branch.<br>
+I have been recognized as being innovative and thought Developer who is able to quickly define new technologies, communicating vision, exploring emerging technologies and implementing concrete prototypes.<br>
+I specialize in bridging the gap between marketing/business strategy and data science. I am an established R&D manager who pushed his company to focus on the right things to ensure a rapid and sustainable impact on the business through Data Science and marketing initiative.<br>
+Consulter in complex data and AI challenges with a proven record of innovative strategic decision making, growing revenue and reducing cost through scalable solutions.<br>
+Not only do I have a passionately high drive but I have high integrity and personal accountability to my goals; I continually pushed myself to learn and grow so that I could raise my career development.<br>
+I can always be counted on to think outside the box to provide brilliant and efficient solutions.<br>
+I have had a chance to work with engineering and research teams in several industries especially healthcare startups.<br>
+I have a proven track record of researching, developing, and delivering Machine Learning and Robotics products within both Academia and Industry.<br>
+An energetic coworker who is committed to what he believes in and enjoys solving real-world problems in a team-work manner.<br>
+I am a technology advisor to a few startups and organizations such the Monistar Foundation.<br>
+I have had the opportunity to develop and learn new skills every day. Fast learning skills and able to understand the complex and technical skills effectively. <br>
+And at the end I should say “I am a happy programmer, funny data scientist, energetic system manager, exultant idea maker”.
+</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/jasonjafari/" target="_balnk" class="text-white">Follow on Linkedin</a></li>
+             
+            <li><a href="mailto:jason.jafari.m@gmail.com" target="_balnk" class="text-white">Email me</a></li>
+
+            <li>
+             
+
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ><a   class="text-white"   >Up </a> </span>
+      </button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Certificates</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 style=" text-shadow: 2px 2px 5px gray;  font-weight: bold;" >JASON JAFARI</h1>
+      <img src="{% static 'jason-jafari.jpg' %}" style=" border: 10px solid #98989a;width: 60%;  border-radius: 12%; box-shadow: 10px 10px 5px grey;">
+      <hr>
+      <p class="lead text-muted">I have had the opportunity to develop and learn new skills every day. Fast learning skills and able to understand the complex and technical skills effectively. </p>
+      <p>
+
+   <hr>
+
+
+        <a  target="_balnk" href="https://www.linkedin.com/in/jasonjafari/" class="btn btn-primary my-2">Follow on Linkedin</a>
+        <a  target="_balnk" href="mailto:jason.jafari.m@gmail.com" class="btn btn-secondary my-2">Email me</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+
+
+{% for job in jobs.all %}
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" style="    ">
+           <img class="card-img" style="  " src="{{ job.image.url}}"></img>
+            <div class="card-body">
+              <p class="card-text" style="position: absolute;
+    bottom: 0%;">{{job.summary}}</p>
+               
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+         
+
+
+         
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Powerd by Django and Use Bootstrap for styling</p>
+    <p>Hosted by Amazon Web Services (AWS)</p>
+    
+  </div>
+</footer> 
+<script src="{% static 'jquery-3.4.1.min.js' %}"  crossorigin="anonymous"></script>
+<script src="{% static 'popper.min.js' %}" crossorigin="anonymous"></script>
+<script src="{% static 'bootstrap.min.js' %}"   crossorigin="anonymous"></script>
+
 </html>
