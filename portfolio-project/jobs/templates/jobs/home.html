@@ -146,14 +146,16 @@ And at the end I should say “I am a happy programmer, funny data scientist, en
 {% for job in jobs.all %}
 
         <div class="col-md-4">
+        <a href="{% url 'detail'  job.id %}">
           <div class="card mb-4 shadow-sm" style="    ">
            <img class="card-img" style="  " src="{{ job.image.url}}"></img>
             <div class="card-body">
-              <p class="card-text" style="position: absolute;
-    bottom: 0%;">{{job.summary}}</p>
+              <p class="card-text" style=" ">{{job.summary}}</p>
                
             </div>
           </div>
+
+          </a>
         </div>
 
         {% endfor %}
