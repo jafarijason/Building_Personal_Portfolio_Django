@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-#change data base to postgres
+#change data base to postgres changggggggggggggggg
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
