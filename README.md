@@ -79,12 +79,13 @@ after that we should define url to django
 
 
 ```
+from django.contrib import admin
+from django.urls import path
 import jobs.views 
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('jason/', jobs.views.jason),
+    path('jason/', jobs.views.jason,name='jason'),
 ]
 
 
@@ -93,10 +94,57 @@ urlpatterns = [
 
 
 
+after we should change the jobs/views.py and make jason function
+
+
+some changes that you can finde in commite for view pages
+
+
+
+-----------------------------------------------------------
+
+
+
+
+at this section we want to work database
+
+so we should  use the models
+
+in the root of project open the models.py
+
+
+```
+class Job(models.Model):
+    #Images
+    image = models.ImageField(upload_to='images/')
+    #summary 
+    summary = models.CharField(max_length=200)
+    
+    
+```
+
+for working by images we should intall pillo
+
+
+```
+pip install pillow
+
+```
+
+django can work with a lot of databases 
+
+but we want to install Postgrees
+
+to want know more aboute Postgree data base you can go to this link
 
 
 
 
 
+* [Postgresql](https://www.postgresql.org/docs/6.3/c0101.htm) - Toutorial
 
-a
+
+
+
+
+ 
