@@ -144,6 +144,35 @@ to want know more aboute Postgree data base you can go to this link
 * [Postgresql](https://www.postgresql.org/docs/6.3/c0101.htm) - Toutorial
 
 
+by at the moment i decide to use sqliteite
+
+
+
+and try to makemigration
+
+```
+ python manage.py makemigrations
+```
+
+```
+ python manage.py migrate
+```
+
+
+ok it is grate
+
+by going to  /admin sectiom you will relize django have admin page
+
+for making user for django admin you should type this command 
+
+```
+python manage.py createsuperuser
+```
+
+
+
+
+
 
 
 

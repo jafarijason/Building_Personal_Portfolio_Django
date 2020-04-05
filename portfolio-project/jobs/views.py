@@ -7,5 +7,5 @@ def jason(request):
 
 
 
-def home(request):
+def homepages(request):
     return render(request,'jobs/home.html')
