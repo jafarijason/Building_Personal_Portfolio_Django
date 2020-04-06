@@ -25,7 +25,7 @@ SECRET_KEY = ')o3b$xz=euh$yi&od7xvo$9h$*y@yq6f&_oz^k85s2)2r6z%p_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['certificate.jasonjafari.com']
 
 
 # Application definition
