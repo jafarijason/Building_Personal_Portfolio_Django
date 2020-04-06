@@ -115,9 +115,9 @@ GitHub.sublime-settings
 !.vscode/extensions.json 
 .history
 
-settings.py
-portfolio-project/settings.py
-portfolio-project/portfolio/settings.py
+# settings.py
+# portfolio-project/settings.py
+# portfolio-project/portfolio/settings.py
 
 
 # Byte-compiled / optimized / DLL files
