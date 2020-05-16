@@ -358,3 +358,33 @@ docker-compose up
 docker rename portfolio-project_web_1 certificate.jasonjafari
 
  
+
+ make 
+ sudo nano /etc/nginx/conf.d/certificate.jasonjafari.conf
+
+ 
+upstream  certificate.jasonjafari.com {
+    server 127.0.0.1:8000;
+}
+
+server {
+        listen 80;
+        server_name certificate.jasonjafari.com ;
+
+        location / {
+            proxy_pass         http://certificate.jasonjafari.com;
+            proxy_redirect     off;
+            proxy_set_header   Host $host;
+            proxy_set_header   X-Real-IP $remote_addr;
+            proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header   X-Forwarded-Host $server_name;
+
+        }
+}
+
+
+
+sudo service nginx restart
+
+
+docker rename  certificate.jasonjafari   certificate.jasonjafari.com
